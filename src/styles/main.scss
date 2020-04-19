@@ -122,6 +122,9 @@ body {
 }
 .block-text  {
   flex-basis: calc(93% - 500px);
+  &--width {
+    flex-basis: calc(93% - 520px);
+  }
   small {
     font-family: 'Open Sans', sans-serif;
     font-style: italic;
@@ -145,12 +148,8 @@ body {
   &__title {
     font-size: 48px;
     font-weight: 700;
-    padding-left: 97px;
-    padding-top: 10px;
-    margin-left: -12px;
     letter-spacing: 1.8px;
     margin-bottom: 40px;
-    margin-top: -20px;
     span {
       display: block;
       color: $accent-color;
@@ -212,6 +211,39 @@ body {
       font-size: 12px;
       letter-spacing: 0.1px;
     }
+    &-item {
+      margin-bottom: 55px;
+      &__date {
+        font-size: 15px;
+        font-family: 'Open Sans', sans-serif;
+        letter-spacing: 0.8px;
+        margin-bottom: 4px;
+      }
+      &__title {
+        font-size: 18px;
+        letter-spacing: 0.9px;
+        margin-bottom: 16px;
+      }
+      &__desc {
+        font-size: 15px;
+        font-family: 'Open Sans', sans-serif;
+        letter-spacing: 0.75px;
+      }
+      &__btn {
+        display: block;
+        background: linear-gradient(to top left, #65e49c, #65e4af);
+        color: $light-color;
+        text-decoration: none;
+        max-width: 137px;
+        border-radius: 3px;
+        text-align: center;
+        margin-top: 24x;
+        padding: 11px 45px 15px 45px;
+        font-size: 18px;
+        letter-spacing: 0.7px;
+        box-shadow: 0 -2px #b2f1be inset;
+      }
+    }
   }
 .block-book {
   display: flex;
@@ -265,9 +297,18 @@ body {
     right: 0;
     background-color: #52a4a1;
   }
+  &__svg--left {
+    right: inherit;
+    left: 0;
+  }
   &__img {
     margin-top: 47px;
     margin-right: 44px;
+  }
+  &__img--left {
+    margin-top: 49px;
+    margin-left: 51px;
+    margin-right: 0;
   }
 }
 .block-counter {
@@ -418,6 +459,48 @@ p.page_subtitles {
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     font-size: 18px;
+  }
+}
+
+.block-blog {
+  display: flex;
+  justify-content: space-between;
+  color: #44444f;
+  h4 {
+    font-size: 18px;
+    padding-top: 16px;
+    letter-spacing: 0.9px;
+  }
+  &-img {
+    width: 369px;
+    height: 224px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 83px;
+  }
+  &-info {
+    font-size: 15px;
+    letter-spacing: 0.9px;
+    color: #44444f;
+    a {
+      color: $accent-color;
+      text-decoration: none;
+    }
+    p {
+
+    }
+  }
+  &__desc {
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  & + .page__btn {
+    display: block;
+    margin: 84px auto 0;
+    padding: 13px 0;
+    max-width: 277px;
+    margin-top: 75px;
+    letter-spacing: 0.9px;
   }
 }
 
