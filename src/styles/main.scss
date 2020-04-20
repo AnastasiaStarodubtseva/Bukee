@@ -10,6 +10,7 @@ $light-color: #fff;
 $accent-color: #65e496;
 $bg-light-color: #f5f6fa;
 $bg-dark-color: #44444f;
+$grey-color: #9191b5;
 
 h1, h2, h3, h4, p {
   padding: 0;
@@ -493,14 +494,52 @@ p.page_subtitles {
   &__desc {
     font-size: 15px;
     font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.7px;
   }
   & + .page__btn {
     display: block;
     margin: 84px auto 0;
     padding: 13px 0;
     max-width: 277px;
-    margin-top: 75px;
-    letter-spacing: 0.9px;
   }
 }
-
+.block-letter {
+  display: flex;
+  justify-content: space-between;
+  &-item {
+    flex-basis: 49%;
+  }
+  &__title {
+    font-size: 48px;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+  }
+  &__text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.7px;
+  }
+  &__input {
+    width: 100%;
+    background-color: $bg-dark-color;
+    border: none;
+    color: $grey-color;
+    padding: 15px 15px;
+    box-sizing: border-box;
+  }
+  &__btn {
+    background: linear-gradient(to top left, #65e49c, #65e4af);
+    border: none;
+    color: $light-color;
+    text-decoration: none;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 28px;
+    padding: 11px 15px;
+    letter-spacing: 0.7px;
+    box-shadow: 0 -2px #b2f1be inset;
+    display: block;
+    width: 100%;
+  }
+}
