@@ -511,21 +511,27 @@ p.page_subtitles {
   }
   &__title {
     font-size: 48px;
-    margin-bottom: 25px;
-    letter-spacing: 2px;
+    margin-bottom: 23px;
+    margin-top: 8px;
+    letter-spacing: 1.9px;
   }
   &__text {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
-    letter-spacing: 0.7px;
+    letter-spacing: 0.75px;
   }
   &__input {
     width: 100%;
     background-color: $bg-dark-color;
     border: none;
     color: $grey-color;
-    padding: 15px 15px;
+    padding: 15px 27px;
     box-sizing: border-box;
+    border-radius: 3px;
+    letter-spacing: 0.6px;
+    &:focus {
+      outline: none;
+    }
   }
   &__btn {
     background: linear-gradient(to top left, #65e49c, #65e4af);
@@ -535,11 +541,15 @@ p.page_subtitles {
     border-radius: 3px;
     text-align: center;
     font-size: 18px;
-    margin-top: 28px;
+    margin-top: 21px;
     padding: 11px 15px;
     letter-spacing: 0.7px;
     box-shadow: 0 -2px #b2f1be inset;
     display: block;
     width: 100%;
+    cursor: pointer;
+    &:focus {
+      outline: none;
+    }
   }
 }
