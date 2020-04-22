@@ -553,3 +553,51 @@ p.page_subtitles {
     }
   }
 }
+.footer {
+  background-color: $bg-dark-color;
+  color: $grey-color;
+  padding: 160px 0;
+  width: 100%;
+  height: 312px;
+  align-items: center;
+}
+.block-footer {
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: 0.7px;
+  p {
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 38px;
+  }
+
+  &>div {
+    flex-basis: 30%;
+  }
+  &__logo {
+    display: block;
+    width:  137px;
+    height: 28px;
+    background-image: url(../img/logo.svg);
+  }
+  &__title {
+    font-size: 18px;
+    color: $accent-color;
+    font-family: 'Roboto Slab', serif;
+  }
+  &__list {
+    list-style-type: none;
+    padding-left: 0;
+    font-family: 'Open Sans', sans-serif;
+  }
+  &__social {
+    display: flex;
+    list-style-type: none;
+    &>li {
+      margin-right: 10px;
+      padding-left: 0;
+      &>a {
+        color: $accent-color;
+      }
+    }
+  }
+}
