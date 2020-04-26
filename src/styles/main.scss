@@ -122,6 +122,10 @@ body {
     }
   }
 }
+
+.block-book .block-text {
+  margin-left: 50px;
+}
 .block-text  {
   flex-basis: calc(93% - 500px);
   &--width {
@@ -137,7 +141,7 @@ body {
   &__name {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
-    margin-top: 9px;
+    margin-top: 10px;
     margin-left: 4px;
     letter-spacing: 0.85px;
     margin-bottom: 43px;
@@ -157,26 +161,17 @@ body {
       color: $accent-color;
       font-size: 18px;
       padding-top: 24px;
-      letter-spacing: 0.8px;
+      letter-spacing: 0.9px;
       padding-left: 2px;
+      font-weight: 400px;
     }
   }
     &__description {
       font-family: 'Open Sans', sans-serif;
       font-size: 15px;
       line-height: 24px;
-      margin-bottom: 24px;
-      letter-spacing: 0.75px;
-      /* &:first-child {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 15px;
-        letter-spacing: 0.4px;
-        padding-left: 86px;
-        line-height: 24px;
-        width: 565px;
-        height: 58px;
-      }
-     */
+      margin-bottom: 22px;
+      letter-spacing: 0.80px;
     }
     &__btn {
       display: block;
@@ -203,7 +198,7 @@ body {
       border-radius: 3px;
       text-align: center;
       margin-top: 48px;
-      margin-bottom: 19px;
+      margin-bottom: 13px;
       padding: 11px 0 15px 0;
       font-size: 18px;
       letter-spacing: 0.7px;
@@ -211,7 +206,8 @@ body {
     small {
       font-style: italic;
       font-size: 12px;
-      letter-spacing: 0.1px;
+      letter-spacing: 0.7px;
+
     }
     &-item {
       margin-bottom: 55px;
@@ -255,16 +251,16 @@ body {
     position: relative;
     background-image: url(../img/book.svg);
     width: 447px;
-    height: 643px;
+    height: 649px;
     background-repeat: no-repeat;
-    flex-basis: 500px;
     &__title {
       font-size: 36px;
       text-transform: uppercase;
       position: absolute;
       left: 131px;
       letter-spacing: 1.4px;
-      top: 118px;
+      top: 127px;
+      margin-top: 1px;
       span {
         font-family: 'Open Sans', sans-serif;
         font-size: 14px;
@@ -273,6 +269,7 @@ body {
         text-transform: initial;
         margin-bottom: 10px;
         letter-spacing: 0.5px;
+        margin-top: 10px;
       }
     }
     &__author {
@@ -289,7 +286,7 @@ body {
 .block-author {
   display: flex;
   justify-content: space-between;
-  margin-top: 100px;
+  margin-top: -31px;
 }
 .block-ava {
   position: relative;
