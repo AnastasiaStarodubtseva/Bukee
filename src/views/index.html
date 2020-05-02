@@ -27,6 +27,7 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/9aae0969a7.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="../styles/main.css">
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     </head>
     <body>
         <body>
@@ -181,13 +182,41 @@
             <a href="" class="page_btn">Browse all books</a>
           </div>
         </div>
-        <div class="page">
+        <div class="page page-carousel">
           <div class="wrap">
             <div class="block-carousel">
               <div>
-                <h3>Kate Dennings</h3>
-                <p>Calligraphy Expert</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                <div class="block-carousel-ava">
+                  <div class="block-carousel-thumb">
+                    <img src="../img/photo2.png" alt="">
+                  </div>
+                  <span class="block-carousel-bg"></span>
+                </div>
+                  <h3>Kate Dennings</h3>
+                  <p class="block-carousel__desc block-carousel__expert">Calligraphy Expert</p>
+                  <p class="block-carousel__desc" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+              </div>
+              <div>
+                <div class="block-carousel-ava">
+                  <div class="block-carousel-thumb">
+                    <img src="../img/photo2.png" alt="">
+                  </div>
+                  <span class="block-carousel-bg"></span>
+                </div>
+                  <h3>Kate Dennings</h3>
+                  <p class="block-carousel__desc block-carousel__expert">Calligraphy Expert</p>
+                  <p class="block-carousel__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+              </div>
+              <div>
+                <div class="block-carousel-ava">
+                  <div class="block-carousel-thumb">
+                    <img src="../img/photo2.png" alt="">
+                  </div>
+                    <span class="block-carousel-bg"></span>
+                  </div>
+                    <h3>Kate Dennings</h3>
+                    <p class="block-carousel__desc block-carousel__expert">Calligraphy Expert</p>
+                    <p class="block-carousel__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
               </div>
             </div>
           </div>
@@ -302,5 +331,15 @@
           </div>
         </div>
     <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.block-carousel').slick({
+          dots: true,
+          arrows: false,
+        });
+      });
+  </script>
   </body>
 </html>
