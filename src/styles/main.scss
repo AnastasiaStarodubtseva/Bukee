@@ -310,6 +310,8 @@ body {
 
 .block-ava {
   position: relative;
+  font-size: 0;
+  display: inline-block;
   @media(max-width: 850px) {
     max-width: 356px;
     margin: 0 auto 80px;
@@ -656,10 +658,8 @@ h2.page__title {
   }
 
   &--width {
-    -ms-flex-preferred-size: calc(93% - 520px);
-    flex-basis: calc(93% - 520px);
-    margin-top: -16px;
-    margin-right: 5px;
+    width: 50%;
+    display: inline-block;
     @media(max-width: 1020px) {
       -ms-flex-preferred-size: calc(93% - 315px);
       flex-basis: calc(93% - 315px);
