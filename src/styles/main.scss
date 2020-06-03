@@ -229,6 +229,7 @@ body {
 }
 
 .page.biography {
+
   .block-author {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -245,6 +246,7 @@ body {
       text-align: center;
     }
   }
+
   .author__name_top{
     margin-top: 14px;
     margin-left: 2px;
@@ -252,6 +254,7 @@ body {
     color: $grey-color;
     font-size: 18px;
   }
+
   .author_name {
     font-weight: 400;
     font-size: 48px;
@@ -261,6 +264,7 @@ body {
     line-height: 53px;
     line-height: 1.1;
   }
+
   p.block-text__description-author {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
@@ -269,6 +273,7 @@ body {
     letter-spacing: 0.80px;
     color: $grey-color;
   }
+
   a.block-text__btn-biography {
   -webkit-box-shadow: 0 -2px #59ba88 inset;
             box-shadow: 0 -2px #59ba88 inset;
@@ -290,6 +295,7 @@ body {
       margin-bottom: 10px;
     }
   }
+
   span {
     font-family: 'Open Sans', sans-serif;
       font-size: 14px;
@@ -300,7 +306,7 @@ body {
       letter-spacing: 0.5px;
       margin-top: 7px;
   }
-
+}
 
 .block-ava {
   position: relative;
@@ -335,6 +341,7 @@ body {
     margin-left: 49px;
   }
 }
+
 .block-counter {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -371,7 +378,6 @@ body {
       }
     }
   }
-}
 }
 
 h2.page__title {
