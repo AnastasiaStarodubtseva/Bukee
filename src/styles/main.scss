@@ -263,11 +263,10 @@ body {
   }
 
   a.block-text__btn-biography {
-  -webkit-box-shadow: 0 -2px #59ba88 inset;
-            box-shadow: 0 -2px #59ba88 inset;
+  -webkit-box-shadow: 0 -2px #b2f1be inset;
+            box-shadow: 0 -2px #b2f1be inset;
     display: block;
     background: -webkit-gradient(linear, right bottom, left top, from(#65e49c), to(#65e4af));
-    background: linear-gradient(to top left, #65e49c, #65e4af);
     color: $light-color;
     text-decoration: none;
     max-width: 250px;
