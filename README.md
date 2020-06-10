@@ -5,3 +5,5 @@ Technologies which have been used for the website :
  - SCSS
  - JQuery
  - Methodology BEM in HTML
+
+ [View live demo](https://bukee.anastasiastarodubtseva.com/)
